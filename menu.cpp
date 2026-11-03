@@ -1706,6 +1706,8 @@ void HandleUI(void)
 
 	case MENU_SELECT_INI1:
 		{
+			// Directions select INIs directly; don't inherit list navigation.
+			menumask = 0;
 			OsdSetTitle("Select INI");
 			int flag = 1;
 			for (int i = 1; i < 4; i++) if (FileExists(cfg_get_name(i))) flag |= 1 << i;
