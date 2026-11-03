@@ -1706,7 +1706,6 @@ void HandleUI(void)
 
 	case MENU_SELECT_INI1:
 		{
-			// Directions select INIs directly; don't inherit list navigation.
 			menumask = 0;
 			OsdSetTitle("Select INI");
 			int flag = 1;
